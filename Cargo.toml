@@ -1,0 +1,12 @@
+[package]
+name = "material3_optimizer"
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+authors = ["Aarav Shah <aaravaditya51@gmail.com>"]
+homepage = "https://github.com/Deaths-Door/material3-optimizer"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+clap = {version = "4.3.21", features = ["cargo"] }
+zip = "0.5"
