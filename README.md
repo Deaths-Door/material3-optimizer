@@ -10,6 +10,26 @@ Material Design can be customized to represent a variety of stylistic choices. A
 
 For more information about the Material 3 Builder and its capabilities, please refer to the [Material 3 Builder Blog](https://material.io/blog/material-theme-builder).
 
+
+### Usage
+
+To use the CLI program, follow these steps:
+
+1. Compile the Rust code using the Rust compiler. Run the following command in your terminal:
+
+```bash
+    cargo build
+```
+2. After compiling the Rust code, you will have an executable file (material3_optimier.exe on Windows). Navigate to the directory where the compiled executable is located. To see the available arguments and usage information, enter the following command:
+```bash
+    ../material3_optimier.exe --help
+```
+
+### Error Handling
+
+* If either the input directory or the output directory is not provided, the program will print an error message indicating that both input and output directories are required.
+* If an error occurs while trying to create an`OptimizeResult` object from the input directory, the specific error message will be printed.
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
