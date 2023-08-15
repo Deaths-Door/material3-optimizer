@@ -2,6 +2,7 @@
 name = "material3_optimizer"
 version = "0.1.0"
 edition = "2021"
+description = "It also allows you to inline the colors from the color scheme directly into the generated theme code, providing a seamless integration between the builder and the color scheme."
 readme = "README.md"
 authors = ["Aarav Shah <aaravaditya51@gmail.com>"]
 homepage = "https://github.com/Deaths-Door/material3-optimizer"
