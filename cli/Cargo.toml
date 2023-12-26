@@ -1,6 +1,6 @@
 [package]
-name = "cli"
-
+name = "material3_optimzer_cli"
+description = "Command line interface for https://crates.io/crates/material3_optimzer"
 edition.workspace = true
 readme.workspace = true
 version.workspace = true
@@ -10,4 +10,4 @@ license.workspace = true
 
 [dependencies]
 clap = { version = "4.4.11" , features = ["derive"]}
-material3_optimzer = { path = "../"}
+material3_optimzer = { path = "../" , version = "0.1.1"}
