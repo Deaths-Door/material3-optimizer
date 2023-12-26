@@ -1,6 +1,11 @@
 # material3-optimzer
 
-The Material3 Theme Builder Parser for [Jetpack Compose Material3 Builder](https://m3.material.io/theme-builder#/custom) is a utility that automates the process of generating theme code based on the Material3 Builder output. It also allows you to inline the colors from the color scheme directly into the generated theme code, providing a seamless integration between the builder and the color scheme.
+The Material3 Theme Builder Parser for [Jetpack Compose Material3 Builder](https://m3.material.io/theme-builder#/custom) is a utility that automates the process of generating theme code based on the Material3 Builder output. It also allows you to inline the colors from the color scheme directly into the generated theme code, providing a seamless integration between the builder and the color scheme, eliminating generated boilerplate.
+
+The package contains two components:
+
+1. **Library:** A Rust library that provides the core functionality for parsing the Material3 Builder output and generating theme code.
+2. **CLI:** A command-line interface (CLI) tool that wraps the library and provides a user-friendly interface for using the parser.
 
 ## About
 
@@ -10,25 +15,27 @@ Material Design can be customized to represent a variety of stylistic choices. A
 
 For more information about the Material 3 Builder and its capabilities, please refer to the [Material 3 Builder Blog](https://material.io/blog/material-theme-builder).
 
-
 ### Usage
 
-To use the CLI program, follow these steps:
-
-1. Compile the Rust code using the Rust compiler. Run the following command in your terminal:
-
-```bash
-    cargo build
-```
-2. After compiling the Rust code, you will have an executable file (material3_optimier.exe on Windows). Navigate to the directory where the compiled executable is located. To see the available arguments and usage information, enter the following command:
-```bash
-    ../material3_optimier.exe --help
+**To use it as a library**, add the library to your project's `Cargo.toml` file:
+```rust
+[dependencies]
+material3_optimizer = "0.1.1"
 ```
 
-### Error Handling
+**To use the CLI program**, follow these steps:
 
-* If either the input directory or the output directory is not provided, the program will print an error message indicating that both input and output directories are required.
-* If an error occurs while trying to create an`OptimizeResult` object from the input directory, the specific error message will be printed.
+1. Run the following command in your terminal:
+
+```bash
+    cargo install material3_optimizer_cli
+```
+2. Add the executable to your system's PATH environment variable. This will allow you to run the CLI from any directory.
+
+To see the available arguments and usage information, enter the following command:
+```bash
+    material3_optimizer_cli --help
+```
 
 ## Contributing
 

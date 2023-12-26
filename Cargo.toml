@@ -1,13 +1,25 @@
 [package]
-name = "material3_optimizer"
-version = "0.1.0"
-edition = "2021"
+name = "material3_optimzer"
 description = "It also allows you to inline the colors from the color scheme directly into the generated theme code, providing a seamless integration between the builder and the color scheme."
-readme = "README.md"
-authors = ["Aarav Shah <aaravaditya51@gmail.com>"]
-homepage = "https://github.com/Deaths-Door/material3-optimizer"
-license = "MIT OR Apache-2.0"
+
+edition.workspace = true
+readme.workspace = true
+version.workspace = true
+authors.workspace = true
+homepage.workspace = true
+license.workspace = true
 
 [dependencies]
-clap = {version = "4.3.21", features = ["cargo"] }
+thiserror = "1.0.52"
 zip = "0.5"
+
+[workspace]
+members = ["cli"]
+
+[workspace.package]
+version = "0.1.1"
+edition = "2021"
+readme = "README.md"
+authors = ["Aarav Shah <aaravaditya51@gmail.com>"]
+homepage = "https://github.com/Deaths-Door/arkley"
+license = "MIT OR Apache-2.0"

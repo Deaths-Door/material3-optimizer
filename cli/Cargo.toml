@@ -1,0 +1,13 @@
+[package]
+name = "cli"
+
+edition.workspace = true
+readme.workspace = true
+version.workspace = true
+authors.workspace = true
+homepage.workspace = true
+license.workspace = true
+
+[dependencies]
+clap = { version = "4.4.11" , features = ["derive"]}
+material3_optimzer = { path = "../"}
